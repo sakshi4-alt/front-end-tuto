@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+    body{
+        background-color: black;
+    }
+    #mydiv{
+        width: 100px;
+        height: 100px;
+        margin: 50px;
+        background-color: red;
+       transition property: all;
+        transition-duration: 2s;  
+    }
+ </style> 
+ </head>
+ <body>
+    <div id="mydiv"></div>
+    <script>
+        var mydiv = document.getElementById("mydiv");
+        mydiv.addEventListener("mouseover", function(){
+            mydiv.style.backgroundColor = "blue";
+            mydiv.style.width = "200px";
+            mydiv.style.height = "200px";
+        });
+        mydiv.addEventListener("mouseout", function(){
+            mydiv.style.backgroundColor = "red";
+            mydiv.style.width = "100px";
+            mydiv.style.height = "100px";
+        });
+    </script>

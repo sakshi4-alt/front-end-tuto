@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            width: 1200px;
+            background-color: aquamarine;
+            display: grid;
+            grid-template-columns: 20% 60% auto;
+            grid-template-rows: 200px 200px auto;
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+        }
+
+        .item1 {
+            background-color: red;
+        }
+
+        .item2 {
+            background-color: rgb(141, 141, 241);
+        }
+
+        .item3 {
+            background-color: pink;
+        }
+
+        .item4 {
+            background-color: rgb(67, 12, 21);
+        }
+
+        .item5 {
+            background-color: rgb(189, 235, 39);
+        }
+
+        .item6 {
+            background-color: rgb(229, 102, 33);
+        }
+
+        img {
+            width: 250px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">home</a>
+                        <a href="">about</a>
+                        <a href="">contact us</a>
+                        <a href="">service</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="item2">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="search Here..">search here</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="item3">
+          <img><sunflowr class="jpg"></sunflowr></img> 
+        </div>
+        <div class="item4">
+        </div>
+    </div>
+</body>
+</html>
